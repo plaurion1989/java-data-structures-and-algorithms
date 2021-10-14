@@ -3,20 +3,40 @@ package codechallenges.linkedList;
 public class LinkedList
 {
     Node head = null;
-    Node tail = null;  // not strictly required
+    //Node tail = null;
 
     public void insert(int value)
     {
-        // TODO: implement me
+        Node newNode = new Node(value);
+        newNode.next = head;
+        head = newNode;
     }
     public boolean includes(int value)
     {
-        return false;  // TODO: implement me
+        Node newNode = head;
+        if(head == null) return false;
+        while(head != null)
+        {
+            if (newNode.value != value) {
+
+            }
+        }
+
     }
 
     @Override
     public String toString()
     {
-        return "null";  // TODO: implement me
+        Node newNode = head;
+        String stringValue = "";
+        while(true) {
+            if(newNode == null) {
+                stringValue += "NULL";
+                return stringValue;
+            } else {
+                stringValue += "{ " +newNode.value+ " } -> ";
+                newNode = newNode.next;
+            }
+        }
     }
 }

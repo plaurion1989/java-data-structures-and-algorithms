@@ -1,4 +1,4 @@
-package lib.src.main.java.codechallenges.hashtable;
+package codechallenges.hashtable;
 import java.util.ArrayList;
 import java.util.LinkedList;
 

@@ -2,6 +2,7 @@ package codechallenges.hashtable;
 import java.util.ArrayList;
 import java.util.LinkedList;
 
+
 public class HashTable<K, V> {
 
         ArrayList<LinkedList<HashTablePair<K,V>>> bucketArrayList;  // using ArrayList instead of array so we can instantiate with a generic parameterized type
@@ -24,19 +25,33 @@ public class HashTable<K, V> {
 
         // WARNING: adding duplicate keys won't work properly in this hash map!
         public void add(K key, V value)
-        {
-            // TODO: implement me
+        {  //based on Haustins code from code review
+            int hashedKey = hash(key);
+            LinkedList<HashTablePair<K,V>> addingKey = bucketArrayList.get(hashedKey);
+            addingKey.add(new HashTablePair<>(key, value));
         }
 
         public V get(K key)
-        {
-            // TODO: implement me
+        {   //based on Haustins code from code review
+            int hashedKey = hash(key);
+            LinkedList<HashTablePair<K,V>> bucket = bucketArrayList.get(hashedKey);
+            for (HashTablePair<K,V> keyName : bucket) {
+                if(keyName.getKey().equals(key)) {
+                    return keyName.getValue();
+                }
+            }
             return null;
         }
 
         public boolean contains(K key)
-        {
-            // TODO: implement me
+        {  //based on Haustins code from code review
+            int hashedKey = hash(key);
+            LinkedList<HashTablePair<K,V>> bucket = bucketArrayList.get(hashedKey);
+            for (HashTablePair<K,V> keyName : bucket) {
+                if(keyName.getKey().equals(key)) {
+                    return true;
+                }
+            }
             return false;
         }
 

@@ -1,6 +1,7 @@
 package codechallenges.hashtable;
 import java.util.ArrayList;
 import java.util.LinkedList;
+import java.util.Locale;
 
 
 public class HashTable<K, V> {
@@ -55,17 +56,26 @@ public class HashTable<K, V> {
             return false;
         }
 
-        public String repeatedWord(String word)
+
+        public static String repeatedWord(String words)
         {
+            String[] checkArray = words.replaceAll("[^a-zA-Z]", "").toLowerCase().split(" ");
+            HashTable<String ,Integer> repeatWords = new HashTable<>(checkArray.length);
+            for(String check : checkArray)
+            {
+                if(repeatWords.get(check) == null)
+                {
+                    repeatWords.add(check,1);
+                }else
+                {
+                    return check;
+                }
+            }
             return null;
         }
 
-        public void getWord(V word)
-        {
 
-        }
-
-        // Sometimes hashCode can be negative in Java, hence the abs()
+    // Sometimes hashCode can be negative in Java, hence the abs()
         // If you really want to implement your own hashing, look at https://stackoverflow.com/a/113600/16889809
         // Don't use Character in here! Don't use Object()! Don't use any object you made that does not have hashCode() and equals() overridden
         // If you do, things that should collide, won't

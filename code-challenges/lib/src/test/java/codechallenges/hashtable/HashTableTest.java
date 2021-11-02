@@ -1,5 +1,7 @@
 package codechallenges.hashtable;
 import org.junit.jupiter.api.Test;
+import static codechallenges.hashtable.HashTable.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class HashTableTest {
 
@@ -33,5 +35,18 @@ public class HashTableTest {
             // map has 10, 1 is key value is patrick
             // int(s) (as key) hash to their own int value!!!
         }
+         @Test
+            void repeatedWordTest()
+            {
+                String sentence1 = "i am testing to see if i can find i as the repeated word";
+                String sentence2 = "This test will Ensure that my Method will Test all strings properly, returning tEst";
+                String sentence3 = "how much wood can a woodchuck chuck, if a woodchuck could chuck wood should return A";
+
+                String test1 = repeatedWord(sentence1);
+                repeatedWord(sentence2);
+                repeatedWord(sentence3);
+
+                assertEquals("i", test1);
+            }
 
     }

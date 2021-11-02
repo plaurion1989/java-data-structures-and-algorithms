@@ -55,6 +55,16 @@ public class HashTable<K, V> {
             return false;
         }
 
+        public String repeatedWord(String word)
+        {
+            return null;
+        }
+
+        public void getWord(V word)
+        {
+
+        }
+
         // Sometimes hashCode can be negative in Java, hence the abs()
         // If you really want to implement your own hashing, look at https://stackoverflow.com/a/113600/16889809
         // Don't use Character in here! Don't use Object()! Don't use any object you made that does not have hashCode() and equals() overridden

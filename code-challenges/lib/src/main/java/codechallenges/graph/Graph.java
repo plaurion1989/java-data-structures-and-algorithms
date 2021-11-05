@@ -4,60 +4,64 @@ import java.util.*;
 
 public class Graph<T extends Comparable<? super T>>
 {
-
     private int size = 0;
+    private LinkedHashMap<Vertex<T>, LinkedList<Edge<T>>> adjacencyListsMap;  // LinkedHashMap is to retain insert order when outputting
 
-    public Graph() {
-        this.adjacencyListMap = LinkedHashMap<Vertex<T>, LinkedList<Edge<T>>>();
+    public Graph()
+    {
+        this.adjacencyListsMap = new LinkedHashMap<Vertex<T>, LinkedList<Edge<T>>>() ;
     }
 
-    private LinkedHashMap<Vertex<T>, LinkedList<Edge<T>>> adjacencyListMap;
-
-    Vertex<T> addVertex(T value)
+    Vertex<T> addNode(T value)
     {
         Vertex<T> newVertex = new Vertex<>(value);
         LinkedList<Edge<T>> newAdjacencyList = new LinkedList<>();
-        adjacencyListMap.put(newVertex, newAdjacencyList);
-        size ++;
+        adjacencyListsMap.put(newVertex, newAdjacencyList);
+
+        size++;
         return newVertex;
     }
 
     Set<Vertex<T>> getNodes()
     {
-       return adjacencyListMap.keySet();
-    }
-
-    List<Edge<T>> getNeighbors(Vertex<T> sourceVertex)
-    {
-        //TODO: implement me
-        return null;
+        return adjacencyListsMap.keySet();
     }
 
     void addEdge(Vertex<T> sourceVertex, Vertex<T> destinationVertex, int weight)
     {
         Edge<T> newEdge = new Edge<>(destinationVertex, weight);
-        LinkedList<Edge<T>> adjacencyList = adjacencyListMap.get(sourceVertex);
+        LinkedList<Edge<T>> adjacencyList = adjacencyListsMap.get(sourceVertex);
         adjacencyList.add(newEdge);
+    }
+
+    // Should be O(1) time, O(1) additional space
+    List<Edge<T>> getNeighbors(Vertex<T> sourceVertex)
+    {
+        return null;  // TODO: Implement me
     }
 
     int size()
     {
         return this.size;
     }
+
     @Override
     public String toString()
     {
-        Set<Vertex<T>> vertices = adjacencyListMap.keySet();
+        Set<Vertex<T>> vertices = adjacencyListsMap.keySet();
         String graphString = "";
+
         for (Vertex<T> vertex : vertices)
         {
-            LinkedList<Edge<T>> adjacencyList = adjacencyListMap.get(vertex);
-            System.out.println(vertex + ": ");
-            for(Edge<T> edge : adjacencyList)
+            LinkedList<Edge<T>> adjacencyList = adjacencyListsMap.get(vertex);
+            graphString += vertex + ": ";
+            for (Edge<T> edge : adjacencyList)
             {
-                graphString += edge.destination.value + " weight: " + edge.weight + ") ->");
-                graphString += "\n";
+                graphString += edge.destination.value + "(weight: " + edge.weight + ") -> ";
             }
-        }return graphString;
+            graphString += "NULL\n";
+        }
+
+        return graphString;
     }
 }

@@ -1,34 +1,108 @@
 package codechallenges.linkedList;
 
-public class LinkedList
+import java.security.InvalidParameterException;
+
+public class LinkedList<T>
 {
 
-    Node head = null;
+    Node<T> head = null;
 
-    public void insert(int value)
+    public void insert(T v)
     {
-        Node newNode = new Node(value);
+        Node<T> newNode = new Node<>(v);
         newNode.next = head;
         head = newNode;
     }
-    public boolean includes(int value)
+    public boolean includes(T v)
     {
-        Node checkNode = head;
-        while(checkNode != null)
+        Node currentNode = head;
+        while(currentNode != null)
         {
-            if (checkNode.value == value)
+            if (currentNode.value.equals(v))
             {
                 return true;
             }
-            checkNode = checkNode.next;
+            currentNode = currentNode.next;
         }
         return false;
+    }
+
+    public void append(T v) {
+        // give newNode input value V
+        Node<T> newNode = new Node<>(v);
+        // make sure newNode does not have assigned next node.
+        newNode.next = null;
+        // check if we are adding to an empty LL
+        if (this.head == null) {
+            // if we are, set this newNode as the new head of empty LL
+            this.head = newNode;
+            // if LL is not empty
+        } else {
+            // establish a variable of type Node that is the head of LL
+            Node<T> currentNode = this.head;
+            // make sure there are other nodes in the LL
+            while (currentNode.next != null) {
+                //if there are, then we will keep moving through the LL until next
+                // is null, then the loop breaks while currentNode is the last node
+                // in the LL.
+                currentNode = currentNode.next;
+            }
+            // once we have reached the last node in the LL, we will append the new
+            // node with the value V to the LL
+            currentNode.next = newNode;
+        }
+    }
+
+    public void insertBefore(T searchV, T insertV)
+    {
+        // set local variable of type Node to have value of insertV
+        Node<T> newNode = new Node<>(insertV);
+        // set local variable of type Node to LL head
+        Node<T> currentNode = this.head;
+        // we traverse through the LL
+        while (currentNode.next != null) {
+            // we check to see of the input value is the same as node value in LL
+            if (currentNode.value.equals(searchV)) {
+                // if it is, then set newNode before
+                newNode.next = currentNode;
+            }
+            // if not then we keep going
+            else {
+                currentNode.next = currentNode;
+            }
+            // if nothing is found, then nothing happens.
+        }
+    }
+
+
+    public void insertAfter (T searchV, T insertV)
+    {
+        // set local variable of type Node to have value of insertV
+        Node<T> newNode = new Node<>(insertV);
+        // set local variable of type Node to LL head
+        Node<T> currentNode = this.head;
+        // we traverse through the LL
+        while (currentNode.next != null)
+        {
+            // we check to see of the input value is the same as node value in LL
+            if (currentNode.value == searchV)
+            {
+                // we set the newNode in the LL after
+                currentNode.next = newNode;
+            }
+            // if not then we keep going
+            else
+            {
+                currentNode = currentNode.next;
+            }
+            // if nothing is found, then nothing happens.
+        }
     }
 
     @Override
     public String toString()
     {
-        Node node = this.head;
+        Node<T> node = this.head;
         String string = "";
         while(node != null)
         {

@@ -99,6 +99,35 @@ public class LinkedList<T>
         }
     }
 
+    public void kthFromEnd(int k)
+    {
+        //writing based on 0 indexing since was not specified in instructions.
+        Node<T> A = this.head;
+        Node<T> B = this.head;
+        // should give B pointer starting position of k in linked list
+        if (B != null)
+        {
+            for(int i = 0; i<= k; i++)
+            {
+                if(B.next != null)
+                {
+                    B = B.next;
+                }
+            }
+            //will not run if int k forces B to null before B traverses a node in LL k times
+        }
+        // start traversing the list until B.next is null.  node A will be kthFromEnd node.
+        while(B != null)
+        {
+            if(A.next != null)
+            {
+                A = A.next;
+                B = B.next;
+            }
+        }
+        System.out.println(A.value);
+    }
+
     @Override
     public String toString()
     {

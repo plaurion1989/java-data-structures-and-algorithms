@@ -2,21 +2,41 @@ package codechallenges.linkedList;
 
 public class LinkedList
 {
+
     Node head = null;
-    Node tail = null;  // not strictly required
 
     public void insert(int value)
     {
-        // TODO: implement me
+        Node newNode = new Node(value);
+        newNode.next = head;
+        head = newNode;
     }
     public boolean includes(int value)
     {
-        return false;  // TODO: implement me
+        Node checkNode = head;
+        while(checkNode != null)
+        {
+            if (checkNode.value == value)
+            {
+                return true;
+            }
+            checkNode = checkNode.next;
+        }
+        return false;
     }
 
     @Override
     public String toString()
     {
-        return "null";  // TODO: implement me
+        Node node = this.head;
+        String string = "";
+        while(node != null)
+        {
+            string = string + "{ " +node.value+ " } -> ";
+            node = node.next;
+        }
+        string =  string + "is NULL";
+        return string;
     }
 }
+

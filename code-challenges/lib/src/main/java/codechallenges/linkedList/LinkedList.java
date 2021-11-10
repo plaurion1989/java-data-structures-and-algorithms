@@ -2,8 +2,8 @@ package codechallenges.linkedList;
 
 public class LinkedList
 {
+
     Node head = null;
-    //Node tail = null;
 
     public void insert(int value)
     {
@@ -13,30 +13,30 @@ public class LinkedList
     }
     public boolean includes(int value)
     {
-        Node newNode = head;
-        if(head == null) return false;
-        while(head != null)
+        Node checkNode = head;
+        while(checkNode != null)
         {
-            if (newNode.value != value) {
-
+            if (checkNode.value == value)
+            {
+                return true;
             }
+            checkNode = checkNode.next;
         }
-
+        return false;
     }
 
     @Override
     public String toString()
     {
-        Node newNode = head;
-        String stringValue = "";
-        while(true) {
-            if(newNode == null) {
-                stringValue += "NULL";
-                return stringValue;
-            } else {
-                stringValue += "{ " +newNode.value+ " } -> ";
-                newNode = newNode.next;
-            }
+        Node node = this.head;
+        String string = "";
+        while(node != null)
+        {
+            string = string + "{ " +node.value+ " } -> ";
+            node = node.next;
         }
+        string =  string + "is NULL";
+        return string;
     }
 }
+

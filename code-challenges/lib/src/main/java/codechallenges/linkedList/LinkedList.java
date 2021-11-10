@@ -128,6 +128,39 @@ public class LinkedList<T>
         System.out.println(A.value);
     }
 
+    public static LinkedList zipLists(LinkedList inputList, LinkedList inputList2)
+    {
+        Node A = inputList.head;
+        Node B = inputList2.head;
+        LinkedList mergedList = new LinkedList<>();
+        // want to merge only nodes with values initially
+        while(A != null && B != null)
+        {
+            // want to merge both list's together evenly at first
+            if(A != null || B != null)
+            {
+                mergedList.append(A.value);
+                mergedList.append(B.value);
+                A = A.next;
+                B = B.next;
+            }
+        }
+        // in the case that inputList is longer than inputList2
+        while (A != null)
+        {
+            mergedList.append(A.value);
+            A = A.next;
+        }
+        // in the case that inputList2 is longer than inputList
+        while (B != null)
+        {
+            mergedList.append(B.value);
+            B = B.next;
+        }
+
+        return mergedList;
+    }
+
     @Override
     public String toString()
     {

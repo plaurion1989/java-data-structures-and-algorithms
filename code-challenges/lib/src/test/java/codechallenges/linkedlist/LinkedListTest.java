@@ -44,18 +44,39 @@ public class LinkedListTest {
         testList.insert(1);
         testList.insert(2);
         testList.insert(3);
-        testList.insert(4);
+        testList.insert("butterfingers");
         testList.insert(5);
         LinkedList testList2 = new LinkedList();
         testList2.insert(1);
 
         testList.kthFromEnd(2);
-        testList.kthFromEnd(5);
+        testList.kthFromEnd(3);
         testList.kthFromEnd(6); // looks like I need to make a few adjustments to handle int k being bigger than
                                     // size of the LL.
 //        testList.kthFromEnd(-2); // test's lock up in potentially infinite loop?
 //        testList2.kthFromEnd(0); // test's lock up in potentially infinite loop?
 
+    }
+    @Test void linkedListTest4()
+    {
+        LinkedList testList = new LinkedList();
+        testList.insert(1);
+        testList.insert(2);
+        testList.insert(3);
+        testList.insert(4);
+        testList.insert(5);
+        testList.insert(6);
+        LinkedList testList2 = new LinkedList();
+        testList2.insert("butterfingers");
+        testList2.insert("nutterbutters");
+        testList2.insert("snickers");
+        testList2.insert("oreos");
+
+        LinkedList zipListTest = LinkedList.zipLists(testList, testList2);
+        String results = zipListTest.toString();
+        System.out.println(results);
+// put these dashes below so that I could read output in debugger
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     }
 
 }

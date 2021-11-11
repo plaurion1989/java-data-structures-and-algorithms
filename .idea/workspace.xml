@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6772f139-8453-471b-8b02-2e8e7a8462bf" name="Changes" comment="" />
+    <list default="true" id="6772f139-8453-471b-8b02-2e8e7a8462bf" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -73,7 +75,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="Gradle.AnimalShelterTest.animalShelterTest1">
+  <component name="RunManager" selected="Gradle.BracketValidatorTest.bracketValidatorTest1">
     <configuration name="AnimalShelterTest.animalShelterTest1" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -95,12 +97,12 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="LinkedListTest.linkedListTest2" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="BracketValidatorTest.bracketValidatorTest1" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/code-challenges" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;codechallenges.linkedlist.LinkedListTest.linkedListTest2&quot;" />
+        <option name="scriptParameters" value="--tests &quot;codechallenges.stack.BracketValidatorTest.bracketValidatorTest1&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -116,12 +118,12 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="LinkedListTest.linkedListTest4" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="LinkedListTest.linkedListTest2" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/code-challenges" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;codechallenges.linkedlist.LinkedListTest.linkedListTest4&quot;" />
+        <option name="scriptParameters" value="--tests &quot;codechallenges.linkedlist.LinkedListTest.linkedListTest2&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -194,11 +196,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.BracketValidatorTest.bracketValidatorTest1" />
         <item itemvalue="Gradle.AnimalShelterTest.animalShelterTest1" />
         <item itemvalue="Gradle.QueueTest.queueTestOne" />
         <item itemvalue="Gradle.StackTest.stackTest1" />
         <item itemvalue="Gradle.LinkedListTest.linkedListTest2" />
-        <item itemvalue="Gradle.LinkedListTest.linkedListTest4" />
       </list>
     </recent_temporary>
   </component>
@@ -232,16 +234,6 @@
           <url>file://$PROJECT_DIR$/code-challenges/lib/src/main/java/codechallenges/linkedList/LinkedList.java</url>
           <line>69</line>
           <option name="timeStamp" value="21" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/code-challenges/lib/src/main/java/codechallenges/queue/AnimalShelter.java</url>
-          <line>35</line>
-          <option name="timeStamp" value="32" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/code-challenges/lib/src/test/java/codechallenges/queue/AnimalShelterTest.java</url>
-          <line>7</line>
-          <option name="timeStamp" value="33" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -11,7 +11,7 @@ public class QueueTest
         testQueue.enqueue("oreo");
         testQueue.enqueue(1);
 
-        testQueue.dequeue();
+        testQueue.enqueue(testQueue.dequeue().value);
         testQueue.dequeue();
 
         System.out.println("\n" + testQueue.peek() + " is still first in queue.");

@@ -6,23 +6,44 @@ public class Stack<T>
 
     void push(T valueToPush)
     {
-        // TODO: implement me
+        Node<T> pushNode = new Node<>(valueToPush);
+        // move the old top down
+        pushNode.next = top;
+        // set new top node
+        top = pushNode;
     }
 
     T pop()
     {
-        // TODO: implement me
-        return null;
+        if(this.isEmpty())
+        {
+            System.out.println("Stack is empty");
+            return null;
+        }
+        else
+        {
+            // let current top fly
+            T popped = top.value;
+            // pass of top duties to deputy top node
+            top = top.next;
+            // tell skipper the eagle has left the nest
+            return popped;
+            // I'm getting tired, "dad" humor is keeping me motivated
+        }
     }
 
     T peek()
     {
+        if(this.isEmpty())
+        {
+            return null;
+        }
        return top.value;
     }
 
     boolean isEmpty()
     {
-        if(this.top == null)
+        if(top == null)
         {
             return true;
         }

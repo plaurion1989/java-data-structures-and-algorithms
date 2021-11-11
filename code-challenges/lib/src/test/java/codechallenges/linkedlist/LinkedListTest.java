@@ -26,7 +26,9 @@ public class LinkedListTest {
     @Test void linkedListTest2()
     {
         LinkedList testList = new LinkedList();
+        //test first if statement
         testList.insert(1);
+        //test the other cases
         testList.insert(4);
         testList.insert(7);
         // function is currently not placing newNode with new value into the linked list.
@@ -34,9 +36,9 @@ public class LinkedListTest {
         // putting a new node anywhere in the LL.
 //        testList.append(6);
 //        testList.insertBefore(1,3);
-//        testList.insertAfter(3,2);
+        testList.insertAfter(3,2);
 
-        System.out.println(testList.toString());
+//        System.out.println(testList.toString());
     }
     @Test void linkedListTest3()
     {

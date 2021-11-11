@@ -60,18 +60,29 @@ public class LinkedList<T>
         // set local variable of type Node to LL head
         Node<T> currentNode = this.head;
         // we traverse through the LL
-        while (currentNode.next != null) {
+        if(currentNode.value.equals(searchV)) {
+            //test this if first value is searchV
+            this.head = newNode;
+            newNode.next = currentNode;
+
+        }
+        // checks every other node in the LL
+        while (currentNode != null) {
             // we check to see of the input value is the same as node value in LL
-            if (currentNode.value.equals(searchV)) {
+            if (currentNode.next.value.equals(searchV)) {
                 // if it is, then set newNode before
-                newNode.next = currentNode;
+                newNode.next = currentNode.next;
+                currentNode.next = newNode;
+                currentNode = newNode.next;
+
+
+
             }
             // if not then we keep going
-            else {
-                currentNode.next = currentNode;
-            }
+            currentNode = currentNode.next;
             // if nothing is found, then nothing happens.
         }
+
     }
 
 
@@ -82,12 +93,13 @@ public class LinkedList<T>
         // set local variable of type Node to LL head
         Node<T> currentNode = this.head;
         // we traverse through the LL
-        while (currentNode.next != null)
+        while (currentNode != null)
         {
             // we check to see of the input value is the same as node value in LL
-            if (currentNode.value == searchV)
+            if (currentNode.value.equals(searchV))
             {
                 // we set the newNode in the LL after
+                newNode.next = currentNode.next;
                 currentNode.next = newNode;
             }
             // if not then we keep going

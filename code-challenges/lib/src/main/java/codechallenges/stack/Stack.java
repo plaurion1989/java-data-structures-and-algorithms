@@ -18,18 +18,26 @@ public class Stack<T>
         if(this.isEmpty())
         {
             System.out.println("Stack is empty");
+            return null;
         }
-        // let current top fly
-        T popped = top.value;
-        // pass of top duties to deputy top node
-        top = top.next;
-        // tell skipper the eagle has left the nest
-        return popped;
-        // I'm getting tired, "dad" humor is keeping me motivated
+        else
+        {
+            // let current top fly
+            T popped = top.value;
+            // pass of top duties to deputy top node
+            top = top.next;
+            // tell skipper the eagle has left the nest
+            return popped;
+            // I'm getting tired, "dad" humor is keeping me motivated
+        }
     }
 
     T peek()
     {
+        if(this.isEmpty())
+        {
+            return null;
+        }
        return top.value;
     }
 

@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6772f139-8453-471b-8b02-2e8e7a8462bf" name="Changes" comment="" />
+    <list default="true" id="6772f139-8453-471b-8b02-2e8e7a8462bf" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/code-challenges/lib/src/main/java/codechallenges/sort/InsertionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/code-challenges/lib/src/main/java/codechallenges/sort/InsertionSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code-challenges/lib/src/main/java/codechallenges/sort/MergeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/code-challenges/lib/src/main/java/codechallenges/sort/MergeSort.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -232,16 +235,6 @@
           <url>file://$PROJECT_DIR$/code-challenges/lib/src/main/java/codechallenges/linkedList/LinkedList.java</url>
           <line>69</line>
           <option name="timeStamp" value="21" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/code-challenges/lib/src/main/java/codechallenges/queue/AnimalShelter.java</url>
-          <line>35</line>
-          <option name="timeStamp" value="32" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/code-challenges/lib/src/test/java/codechallenges/queue/AnimalShelterTest.java</url>
-          <line>7</line>
-          <option name="timeStamp" value="33" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

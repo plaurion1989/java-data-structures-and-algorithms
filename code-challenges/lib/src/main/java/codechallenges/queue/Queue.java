@@ -1,32 +1,52 @@
 package codechallenges.queue;
 
-import codechallenges.queue.Node;
-
 public class Queue<T>
 {
     Node<T> front;
     Node<T> back;
 
-    void enqueue(T valueToEnqueue)
+    public void enqueue(T valueToEnqueue)
     {
-        // TODO: implement me
+        Node<T> insertNode = new Node<>(valueToEnqueue);
+        if(this.isEmpty())
+        {
+            this.front = insertNode;
+            this.back = insertNode;
+            System.out.println("Added " + insertNode.value + " to the front of the queue");
+        }
+        else
+        {
+            this.back.next = insertNode;
+            this.back = insertNode;
+            System.out.println("\n" + "Added " + insertNode.value + " to the back of the queue");
+        }
+
     }
 
-    T dequeue()
+    public Node<T> dequeue()
     {
-        // TODO: implement me
-        return null;
+        Node<T> front = this.front;
+        if(this.isEmpty())
+        {
+            System.out.println("Queue is empty");
+        }
+        this.front = front.next;
+        System.out.println("\n" + "Removed " + front.value + " from queue! " + "\n" + front.next.value + " is now the first in queue!");
+        return front;
     }
 
-    T peek()
+    public T peek()
     {
-        // TODO: implement me
-        return null;
+        return front.value;
     }
 
     boolean isEmpty()
     {
-        // TODO: implement me
+        if(this.front == null)
+        {
+            return true;
+        }
         return false;
     }
 }
+

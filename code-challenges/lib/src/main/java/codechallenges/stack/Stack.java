@@ -17,13 +17,15 @@ public class Stack<T>
 
     T peek()
     {
-        // TODO: implement me
-        return null;
+       return top.value;
     }
 
     boolean isEmpty()
     {
-        // TODO: implement me
+        if(this.top == null)
+        {
+            return true;
+        }
         return false;
     }
 }

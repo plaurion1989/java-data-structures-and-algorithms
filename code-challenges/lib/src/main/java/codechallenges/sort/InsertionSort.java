@@ -1,4 +1,4 @@
-package lib.src.main.java.codechallenges.sort;
+package codechallenges.sort;
 
 public class InsertionSort{
     int[] array = {1,2,3,4,5};

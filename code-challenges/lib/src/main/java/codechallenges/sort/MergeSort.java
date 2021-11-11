@@ -1,4 +1,4 @@
-package lib.src.main.java.codechallenges.sort;
+package codechallenges.sort;
 
 import java.util.Arrays;
 

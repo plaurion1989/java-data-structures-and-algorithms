@@ -73,13 +73,13 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="Gradle.QueueTest.queueTestOne">
-    <configuration name="LinkedListTest.linkedListTest2" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.AnimalShelterTest.animalShelterTest1">
+    <configuration name="AnimalShelterTest.animalShelterTest1" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/code-challenges" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;codechallenges.linkedlist.LinkedListTest.linkedListTest2&quot;" />
+        <option name="scriptParameters" value="--tests &quot;codechallenges.queue.AnimalShelterTest.animalShelterTest1&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -95,12 +95,12 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="LinkedListTest.linkedListTest3" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="LinkedListTest.linkedListTest2" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/code-challenges" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;codechallenges.linkedlist.LinkedListTest.linkedListTest3&quot;" />
+        <option name="scriptParameters" value="--tests &quot;codechallenges.linkedlist.LinkedListTest.linkedListTest2&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -179,13 +179,26 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="code-challenges.lib" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="code-challenges.lib" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.AnimalShelterTest.animalShelterTest1" />
         <item itemvalue="Gradle.QueueTest.queueTestOne" />
         <item itemvalue="Gradle.StackTest.stackTest1" />
         <item itemvalue="Gradle.LinkedListTest.linkedListTest2" />
         <item itemvalue="Gradle.LinkedListTest.linkedListTest4" />
-        <item itemvalue="Gradle.LinkedListTest.linkedListTest3" />
       </list>
     </recent_temporary>
   </component>
@@ -219,6 +232,16 @@
           <url>file://$PROJECT_DIR$/code-challenges/lib/src/main/java/codechallenges/linkedList/LinkedList.java</url>
           <line>69</line>
           <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/code-challenges/lib/src/main/java/codechallenges/queue/AnimalShelter.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/code-challenges/lib/src/test/java/codechallenges/queue/AnimalShelterTest.java</url>
+          <line>7</line>
+          <option name="timeStamp" value="33" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -1,6 +1,7 @@
 package codechallenges.tree;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 
@@ -9,6 +10,37 @@ public class BinaryTree<T>
     Node <T> root;
     // Can use an ArrayList internally
     ArrayList<T> outputValuesArrayList = new ArrayList<>();
+
+    public Integer maximumValue()
+    {
+        Integer[] values = (Integer[]) this.preOrderTraversal(root);
+        Integer currentMax = Integer.MIN_VALUE;
+        ArrayList<Integer> internalValues = new ArrayList<>(Arrays.asList(values));
+        for(Integer value : internalValues)
+        {
+            if( value > currentMax)
+            {
+                currentMax = value;
+            }
+        }
+        return currentMax;
+
+    }
+    public Integer minimumValue()
+    {
+        Integer[] values = (Integer[]) this.preOrderTraversal(root);
+        Integer currentMin = Integer.MAX_VALUE;
+        ArrayList<Integer> internalValues = new ArrayList<>(Arrays.asList(values));
+        for(Integer value : internalValues)
+        {
+            if( value < currentMin)
+            {
+                currentMin = value;
+            }
+        }
+        return currentMin;
+
+    }
 
     public Object[] preOrderTraversal(Node node)
     {

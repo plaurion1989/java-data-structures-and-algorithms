@@ -5,9 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6772f139-8453-471b-8b02-2e8e7a8462bf" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code-challenges/lib/src/main/java/codechallenges/queue/AnimalShelter.java" beforeDir="false" afterPath="$PROJECT_DIR$/code-challenges/lib/src/main/java/codechallenges/queue/AnimalShelter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code-challenges/lib/src/main/java/codechallenges/tree/BinarySearchTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/code-challenges/lib/src/main/java/codechallenges/tree/BinarySearchTree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code-challenges/lib/src/main/java/codechallenges/tree/BinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/code-challenges/lib/src/main/java/codechallenges/tree/BinaryTree.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

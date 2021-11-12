@@ -64,6 +64,7 @@ public class BinaryTree<T>
                 visitedNodes.add(currentNode.rightNode);
             }
         }
+        System.out.println("Values: " + values);
         return values;
     }
 

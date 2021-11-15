@@ -1,7 +1,7 @@
 package codechallenges.hashtable;
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.Locale;
+import codechallenges.tree.BinaryTree;
+
+import java.util.*;
 
 
 public class HashTable<K, V> {
@@ -74,13 +74,37 @@ public class HashTable<K, V> {
             }
             return null;
         }
+        public ArrayList<Integer> treeIntersection(BinaryTree<Integer> one, BinaryTree<Integer> two)
+        {
+            // size is hardcoded, but will do for testing.
+            HashTable<Integer, Integer> hashTable = new HashTable<>(100);
+            ArrayList<Integer> numbers = new ArrayList<>();
+            Integer[] first = (Integer[]) one.preOrderTraversal(one.root);
+            Integer[] second = (Integer[]) two.preOrderTraversal(two.root);
+            for(int i = 0; i <= first.length -1; i++)
+            {
+                hashTable.add(first[i], first[i]);
+            }
+            for(int i = 0; i <= second.length -1; i++)
+            {
+                if (hashTable.contains(second[i]))
+                {
+                    numbers.add(second[i]);
+                }
+                else
+                {
+                    hashTable.add(second[i], second[i]);
+                }
+            }
+            return numbers;
+        }
 
 
     // Sometimes hashCode can be negative in Java, hence the abs()
         // If you really want to implement your own hashing, look at https://stackoverflow.com/a/113600/16889809
         // Don't use Character in here! Don't use Object()! Don't use any object you made that does not have hashCode() and equals() overridden
         // If you do, things that should collide, won't
-        // Protip: Testing collisions is easy with Integer, because it hashes to its value
+        // Pro-tip: Testing collisions is easy with Integer, because it hashes to its value
         public int hash(K key)
         {
             return Math.abs(key.hashCode() % size);

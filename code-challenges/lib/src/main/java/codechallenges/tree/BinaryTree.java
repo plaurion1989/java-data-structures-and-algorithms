@@ -7,7 +7,7 @@ import java.util.List;
 
 public class BinaryTree<T>
 {
-    Node <T> root;
+    public Node <T> root;
     // Can use an ArrayList internally
     ArrayList<T> outputValuesArrayList = new ArrayList<>();
 

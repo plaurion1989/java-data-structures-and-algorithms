@@ -59,4 +59,23 @@ public class BinarySearchTree<T extends Comparable<? super T>> extends BinaryTre
 
         return false;
     }
+    public Node arrToBBST(int[] arr)
+    {
+        if(arr.length == 0)
+        {
+            return new Node(null);
+        }
+        return helpArrToBBST(arr, 0, arr.length-1);
+    }
+    public Node helpArrToBBST(int[] arr, int left, int right)
+    {
+        if(left > right) return null;
+        int mid = (left - right) / 2;
+        Node node = new Node(arr[mid]);
+        node.leftNode = helpArrToBBST(arr, left, mid-1);
+        node.rightNode = helpArrToBBST(arr, mid+1, right);
+
+        return node;
+    }
+
 }

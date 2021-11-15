@@ -70,7 +70,7 @@ public class BinarySearchTree<T extends Comparable<? super T>> extends BinaryTre
     public Node helpArrToBBST(int[] arr, int left, int right)
     {
         if(left > right) return null;
-        int mid = (left - right) / 2;
+        int mid = left + (left - right) / 2;
         Node node = new Node(arr[mid]);
         node.leftNode = helpArrToBBST(arr, left, mid-1);
         node.rightNode = helpArrToBBST(arr, mid+1, right);

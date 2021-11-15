@@ -78,7 +78,7 @@ public class HashTable<K, V> {
         {
             // size is hardcoded, but will do for testing.
             HashTable<Integer, Integer> hashTable = new HashTable<>(100);
-            ArrayList<Integer> numbers = new ArrayList<>();
+            ArrayList<Integer> doubles = new ArrayList<>();
             Integer[] first = (Integer[]) one.preOrderTraversal(one.root);
             Integer[] second = (Integer[]) two.preOrderTraversal(two.root);
             for(int i = 0; i <= first.length -1; i++)
@@ -89,14 +89,14 @@ public class HashTable<K, V> {
             {
                 if (hashTable.contains(second[i]))
                 {
-                    numbers.add(second[i]);
+                    doubles.add(second[i]);
                 }
                 else
                 {
                     hashTable.add(second[i], second[i]);
                 }
             }
-            return numbers;
+            return doubles;
         }
 
 

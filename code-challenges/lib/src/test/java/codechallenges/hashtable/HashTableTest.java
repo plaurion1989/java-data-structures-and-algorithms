@@ -1,5 +1,11 @@
 package codechallenges.hashtable;
+import codechallenges.tree.BinarySearchTree;
+import codechallenges.tree.BinaryTree;
+import codechallenges.tree.Node;
 import org.junit.jupiter.api.Test;
+
+import java.util.ArrayList;
+
 import static codechallenges.hashtable.HashTable.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -47,6 +53,18 @@ public class HashTableTest {
                 repeatedWord(sentence3);
 
                 assertEquals("i", test1);
+                BinarySearchTree<Integer> testBST1 = new BinarySearchTree<>();
+                int[] array1 = {10,20,35,45,67,89,100};
+                Node root1 = testBST1.arrToBBST(array1);
+                BinarySearchTree<Integer> testBT2 = new BinarySearchTree<>();
+                int[] array2 = {15,20,30,45,66,89,98};
+                Node root2 = testBT2.arrToBBST(array2);
+
+                HashTable hashTable = new HashTable(100);
+                hashTable.treeIntersection(testBST1, testBT2);
+
+
+
             }
 
     }

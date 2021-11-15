@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6772f139-8453-471b-8b02-2e8e7a8462bf" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/code-challenges/lib/src/main/java/codechallenges/tree/BinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/code-challenges/lib/src/main/java/codechallenges/tree/BinaryTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code-challenges/lib/src/main/java/codechallenges/hashtable/HashTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/code-challenges/lib/src/main/java/codechallenges/hashtable/HashTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code-challenges/lib/src/test/java/codechallenges/trees/TreesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/code-challenges/lib/src/test/java/codechallenges/trees/TreesTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,12 +25,56 @@
         <task path="$PROJECT_DIR$/code-challenges">
           <activation />
         </task>
+        <task path="$PROJECT_DIR$/code-challenges/lib">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="code-challenges" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="code-challenges" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="code-challenges" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="code-challenges" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build setup" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="code-challenges" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="documentation" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="code-challenges" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="help" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="code-challenges" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="other" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="code-challenges" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="verification" type="c8890929:TasksNode$1" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
@@ -73,9 +119,10 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="TODO_SCOPE" value="All Places" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="Gradle.BracketValidatorTest.bracketValidatorTest1">
+  <component name="RunManager" selected="Gradle.HashTableTest.repeatedWordTest">
     <configuration name="AnimalShelterTest.animalShelterTest1" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -118,12 +165,12 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="LinkedListTest.linkedListTest2" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="HashTableTest.repeatedWordTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/code-challenges" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;codechallenges.linkedlist.LinkedListTest.linkedListTest2&quot;" />
+        <option name="scriptParameters" value="--tests &quot;codechallenges.hashtable.HashTableTest.repeatedWordTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -160,12 +207,12 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="StackTest.stackTest1" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TreesTest.firstTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/code-challenges" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;codechallenges.stack.StackTest.stackTest1&quot;" />
+        <option name="scriptParameters" value="--tests &quot;codechallenges.trees.TreesTest.firstTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -181,26 +228,13 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="code-challenges.lib" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="code-challenges.lib" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.HashTableTest.repeatedWordTest" />
+        <item itemvalue="Gradle.TreesTest.firstTest" />
         <item itemvalue="Gradle.BracketValidatorTest.bracketValidatorTest1" />
         <item itemvalue="Gradle.AnimalShelterTest.animalShelterTest1" />
         <item itemvalue="Gradle.QueueTest.queueTestOne" />
-        <item itemvalue="Gradle.StackTest.stackTest1" />
-        <item itemvalue="Gradle.LinkedListTest.linkedListTest2" />
       </list>
     </recent_temporary>
   </component>
@@ -235,11 +269,32 @@
           <line>69</line>
           <option name="timeStamp" value="21" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/code-challenges/lib/src/main/java/codechallenges/tree/BinaryTree.java</url>
+          <line>78</line>
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/code-challenges/lib/src/test/java/codechallenges/hashtable/HashTableTest.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/code-challenges/lib/src/main/java/codechallenges/hashtable/HashTable.java</url>
+          <line>61</line>
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.IllegalArgumentException" package="java.lang" />
+          <option name="timeStamp" value="40" />
+        </breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo parentTag="codechallenges.linkedList.LinkedList" memberName="head" />
+        <PinnedItemInfo parentTag="codechallenges.tree.BinarySearchTree" memberName="outputValuesArrayList" />
+        <PinnedItemInfo parentTag="codechallenges.tree.BinarySearchTree" memberName="root" />
       </pinned-members>
     </pin-to-top-manager>
   </component>

@@ -59,8 +59,9 @@ public class HashTable<K, V> {
 
         public static String repeatedWord(String words)
         {
-            String[] checkArray = words.replaceAll("[^a-zA-Z]", "").toLowerCase().split(" ");
-            HashTable<String ,Integer> repeatWords = new HashTable<>(checkArray.length);
+            String[] checkArray = words.replaceAll("[^a-zA-Z ]", "").toLowerCase().split(" ");
+            int length = checkArray.length;
+            HashTable<String ,Integer> repeatWords = new HashTable<>(length);
             for(String check : checkArray)
             {
                 if(repeatWords.get(check) == null)
